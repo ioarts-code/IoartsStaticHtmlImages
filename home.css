@@ -301,7 +301,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
 @media (max-width: 720px) {
   body { min-width: 0; overflow-x: hidden; margin-left: 0; }
   .hero { --hero-image-left: 50%; height: min(760px, 100svh); min-height: 620px; }
-  .hero__backdrop { left: 50%; width: 72%; height: 84%; object-position: center; transform: translate(-50%, -6%) scale(var(--hero-image-scale)); transform-origin: center center; }
+  .hero__backdrop { left: 50%; width: 72%; height: 84%; object-position: center; transform: translate(-50%, -50%) scale(var(--hero-image-scale)); transform-origin: center center; top: 50%; }
   .hero__side { display: none; }
   .hero__footer { height: 210px; padding: 18px 24px; }
   .hero__sub { max-width: 100%; font-size: 10px; letter-spacing: .25em; }
