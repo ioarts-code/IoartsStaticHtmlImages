@@ -16,8 +16,8 @@
   "redirects": [
     {
       "source": "/:path(.*)",
-      "has": [{ "type": "host", "value": "www.ioarts.ink" }],
-      "destination": "https://ioarts.ink/:path",
+      "has": [{ "type": "host", "value": "www.ioarts.site" }],
+      "destination": "https://ioarts.site/:path",
       "permanent": true
     }
   ]
