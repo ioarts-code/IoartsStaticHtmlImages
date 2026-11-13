@@ -1,8 +1,24 @@
 {
-  "routes": [
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/products/:category/:slug", "destination": "/product" }
+  ],
+  "headers": [
     {
-      "src": "/(?!.*\\.(js|css|webp|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|map|json|txt|xml)$).*",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "www.ioarts.ink" }],
+      "destination": "https://ioarts.ink/:path",
+      "permanent": true
     }
   ]
 }
