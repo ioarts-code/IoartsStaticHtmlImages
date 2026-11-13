@@ -12,4 +12,4 @@ Allow: *.svg$
 User-agent: Googlebot-Image
 Allow: /
 
-Sitemap: https://ioarts.ink/sitemap.xml
+Sitemap: https://ioarts.site/sitemap.xml
