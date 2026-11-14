@@ -292,7 +292,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   transform: translateY(-50%);
   background: #64f093;
   color: #000000;
-  padding: 15px 14px;
+  padding: 4px 20px;
   font-size: 11px;
   font-weight: 600;
   line-height: 1;
