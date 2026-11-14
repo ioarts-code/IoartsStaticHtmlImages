@@ -1,15 +1,4 @@
 User-agent: *
 Allow: /
-Allow: /images/
-Allow: *.jpg$
-Allow: *.jpeg$
-Allow: *.png$
-Allow: *.webp$
-Allow: *.gif$
-Allow: *.svg$
-
-# Explicitly allow image crawlers
-User-agent: Googlebot-Image
-Allow: /
 
 Sitemap: https://ioarts.website/sitemap.xml
