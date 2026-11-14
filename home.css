@@ -284,8 +284,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
 }
 
 /* Image badge with alt text */
-.card::after {
-  content: attr(data-alt);
+.card__badge {
   position: absolute;
   top: 50%;
   right: 60px;
@@ -299,13 +298,13 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   white-space: nowrap;
   border-radius: 9999px;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-width: 50px;
   max-width: calc(100% - 24px);
   overflow: hidden;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ── Large monitors (above 24"): full-width description, larger image shifted left ── */
