@@ -284,27 +284,27 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
 }
 
 /* Image badge with alt text */
-.card__badge {
+.card::after {
+  content: attr(data-alt);
   position: absolute;
   top: 50%;
   right: 60px;
   transform: translateY(-50%);
-  background: #05CC47;
+  background: #64f093;
   color: #000000;
-  padding: 5px 14px;
+  padding: 15px 14px;
   font-size: 11px;
   font-weight: 600;
   line-height: 1;
   white-space: nowrap;
   border-radius: 9999px;
   z-index: 10;
-  min-width: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   max-width: calc(100% - 24px);
   overflow: hidden;
   text-overflow: ellipsis;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* ── Large monitors (above 24"): full-width description, larger image shifted left ── */
