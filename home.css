@@ -287,20 +287,23 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
 .card::after {
   content: attr(data-alt);
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 12px;
+  left: 12px;
   background: #05CC47;
   color: #000000;
-  padding: 12px;
-  font-size: 14px;
+  padding: 5px 14px;
+  font-size: 11px;
   font-weight: 600;
-  line-height: 1.4;
-  word-break: break-word;
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: 9999px;
   z-index: 10;
-  min-height: 40px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  max-width: calc(100% - 24px);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ── Large monitors (above 24"): full-width description, larger image shifted left ── */
