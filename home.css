@@ -299,7 +299,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   white-space: nowrap;
   border-radius: 9999px;
   z-index: 10;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   min-width: 50px;
