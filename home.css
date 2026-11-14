@@ -271,7 +271,8 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   background: transparent;
   width: 100%;
   aspect-ratio: 592 / 650;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
 }
 
 .card__image {
@@ -293,13 +294,14 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   bottom: 0;
   left: 0;
   right: 0;
-  background: #00ff00;
+  background: #05CC47;
   color: #000000;
   padding: 10px 12px;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.4;
   word-break: break-word;
+  z-index: 10;
 }
 
 /* ── Large monitors (above 24"): full-width description, larger image shifted left ── */
