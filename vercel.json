@@ -20,5 +20,8 @@
       "destination": "https://ioarts.site/:path",
       "permanent": true
     }
+  ],
+  "errorPages": [
+    { "source": "404", "destination": "/index.html" }
   ]
 }
