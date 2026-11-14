@@ -302,6 +302,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 30px;
   max-width: calc(100% - 24px);
   overflow: hidden;
   text-overflow: ellipsis;
