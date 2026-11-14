@@ -282,6 +282,26 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   object-position: center;
 }
 
+/* Image badge with alt text */
+.card {
+  position: relative;
+}
+
+.card__image::after {
+  content: attr(data-alt);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #a2a2a2;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
 /* ── Large monitors (above 24"): full-width description, larger image shifted left ── */
 @media (min-width: 1921px) {
   .hero { --hero-image-scale: 1.9; --hero-image-left: 55%; }
