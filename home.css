@@ -271,23 +271,19 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   background: transparent;
   width: 100%;
   aspect-ratio: 592 / 650;
-  overflow: visible;
   position: relative;
+  overflow: hidden;
 }
 
 .card__image {
   display: block;
   width: 100%;
-  height: 100%;
+  flex: 1;
   object-fit: cover;
   object-position: center;
 }
 
 /* Image badge with alt text */
-.card {
-  position: relative;
-}
-
 .card::after {
   content: attr(data-alt);
   position: absolute;
@@ -296,12 +292,15 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   right: 0;
   background: #05CC47;
   color: #000000;
-  padding: 10px 12px;
-  font-size: 12px;
-  font-weight: 500;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.4;
   word-break: break-word;
   z-index: 10;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 /* ── Large monitors (above 24"): full-width description, larger image shifted left ── */
