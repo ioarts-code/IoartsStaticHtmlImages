@@ -141,11 +141,12 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   left: 0;
   right: 0;
   height: 192px;
-  background: #a2a2a2;
-  color: #585858;
+  background: #1B1B1B;
+  color: #5C5C5C;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid #262626;
+  border-bottom: 3px solid #262626;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,7 +164,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   font-weight: 900;
   font-size: 56px;
   line-height: 48px;
-  color: #333;
+  color: #5C5C5C;
   text-transform: lowercase;
 }
 
@@ -173,7 +174,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   font-size: 12px;
   letter-spacing: 7.2px;
   text-transform: uppercase;
-  color: #333;
+  color: #5C5C5C;
 }
 
 .hero__blurb {
@@ -182,7 +183,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   font-size: 12px;
   line-height: 17.4px;
   letter-spacing: 0.6px;
-  color: #333;
+  color: #5C5C5C;
   max-width: 680px;
 }
 
@@ -191,7 +192,7 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #333;
+  color: #5C5C5C;
 }
 
 .hero__footer > * {
