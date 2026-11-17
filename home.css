@@ -277,57 +277,17 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   overflow: hidden;
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 150px;
-  border: 3px solid #64f093;
-  border-radius: 50%;
-  background-size: 180%;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 15;
-  box-shadow: 0 0 10px rgba(100, 240, 147, 0.5);
+.card__image {
+  display: block;
+  width: 100%;
+  flex: 1;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
 }
 
-.card:hover::before {
-  opacity: 1;
-  top: 20px;
-  left: 20px;
-}
-
-.card[data-image]::before {
-  background-image: var(--card-image);
-}
-
-.card[data-image="jnj3kgrund2nnomannysvaty80.webp"]::before {
-  --card-image: url('jnj3kgrund2nnomannysvaty80.webp');
-}
-
-.card[data-image="jnj3kgrund2vitalien2 (1).webp"]::before {
-  --card-image: url('jnj3kgrund2vitalien2 (1).webp');
-}
-
-.card[data-image="feralforevertshirt.webp"]::before {
-  --card-image: url('feralforevertshirt.webp');
-}
-
-.card[data-image="Discoalysumt-shirtwhite90.webp"]::before {
-  --card-image: url('Discoalysumt-shirtwhite90.webp');
-}
-
-.card[data-image="jnj3kgrundzeldathsirt862 (1).webp"]::before {
-  --card-image: url('jnj3kgrundzeldathsirt862 (1).webp');
-}
-
-.card[data-image="metroidwebp1900.webp"]::before {
-  --card-image: url('metroidwebp1900.webp');
+.card__image:hover {
+  transform: scale(1.08);
 }
 
 .card__link {
