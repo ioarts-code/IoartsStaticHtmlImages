@@ -296,6 +296,11 @@ button { cursor: pointer; background: none; border: none; font-family: inherit; 
   flex: 1;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.card__image:hover {
+  transform: scale(1.15);
 }
 
 /* Image badge with alt text */
